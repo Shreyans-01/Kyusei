@@ -41,7 +41,14 @@ if st.button("Submit"):
     base_angle = np.pi*np.random.random()
     points_arr, centroid_arr, keys_arr = generate_galaxies(results_clusters, base_angle=base_angle)
     plot_stars(points_arr, centroid_arr, keys_arr, repos)
+    keys_arr = [i.T[:2] for i in keys_arr]
+    st.markdown("## Presenting Similar Issues:")
+    for keys in keys_arr:
+        df = pd.DataFrame(keys.T)
+        df.columns = ['Repository Name', 'Ref ID']
+        st.write(df)
     i = 0
+    st.markdown("## A Spa-ce-ial Representation of these Embeddings:")
     imageLocation = st.empty()
     for _ in range(int(2*np.pi//0.05)):
         imageLocation.image('stars.png')
