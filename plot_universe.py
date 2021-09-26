@@ -1,6 +1,8 @@
 import matplotlib.pyplot as plt
 import numpy as np
 import cv2
+import seaborn as sns
+import matplotlib.patches as mpatches
 
 def generate_galaxies(results_clusters, base_angle=True, seed=0):
 	np.random.seed(seed)
@@ -11,10 +13,12 @@ def generate_galaxies(results_clusters, base_angle=True, seed=0):
 	cluster_labels = cluster_labels[indexes]
 	points_arr = []
 	centroid_arr = []
+	keys_arr = []
 	if base_angle==True:
 		base_angle = np.pi*np.random.random()
 	for i_enum, label in enumerate(cluster_labels):
 		indexes = np.argwhere(labels==label).flatten()
+		keys = results_clusters[indexes]
 		points = np.random.normal(loc=0.0, scale=np.random.random()*0.08+0.07, size=(len(indexes), 2))
 		for i in range(len(points)):
 			for j in range(len(points[0])):
@@ -30,7 +34,8 @@ def generate_galaxies(results_clusters, base_angle=True, seed=0):
 			centroid = [0, 0]
 		centroid_arr.append(centroid)
 		points_arr.append(points)
-	return points_arr, centroid_arr
+		keys_arr.append(keys)
+	return points_arr, centroid_arr, keys_arr
 
 def scale_img(img, scale_percent=0.5):
 	width = int(img.shape[1] * scale_percent)
@@ -48,20 +53,27 @@ def change_brightness(img, value=30):
     img = cv2.cvtColor(final_hsv, cv2.COLOR_HSV2BGR)
     return img
 
-def plot_stars(points_arr, centroid_arr, N=6):
+def plot_stars(points_arr, centroid_arr, keys_arr, repos, N=6):
+	clrs = sns.color_palette('husl', n_colors=len(repos))
 	plt.rcParams["figure.autolayout"] = True
 	plt.rcParams["figure.figsize"] = (11,11)
 	im = plt.imread("galaxy.png")
 	fig, ax = plt.subplots()
 	im = ax.imshow(im, extent=[0, 515, 0, 389])
-	for points in points_arr:
-		ax.scatter(points.T[0]*int(515*0.4)+515//2, points.T[1]*int(389*0.4)+389//2, color='white', marker=(5, 1))
+	for points, keys in zip(points_arr, keys_arr):
+		points.T[0] = points.T[0]*int(515*0.4)+515//2
+		points.T[1] = points.T[1]*int(389*0.4)+389//2
+		for key, point_x, point_y in zip(keys.T[0], points.T[0], points.T[1]):
+			ax.scatter(point_x, point_y, color=clrs[repos.index(key)], marker=(5, 1))
 	ax.axis('off')
+	labels = [mpatches.Patch(color=clrs[repos.index(key)], label=key) for key in repos]
+	plt.legend(handles=labels)
 	plt.savefig('stars.png', bbox_inches='tight')
 
 
 if __name__ == '__main__':
 	from make_clusters import compute_clusters
-	results_clusters = compute_clusters(['bokeh', 'dash', 'rich', 'tqdm'])
-	points_arr, centroid_arr = generate_galaxies(results_clusters)
-	plot_stars(points_arr, centroid_arr)
+	repos = ['bokeh', 'dash', 'rich', 'tqdm']
+	results_clusters = compute_clusters(repos)
+	points_arr, centroid_arr, keys_arr = generate_galaxies(results_clusters)
+	plot_stars(points_arr, centroid_arr, keys_arr, repos)
