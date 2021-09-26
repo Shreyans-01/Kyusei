@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+7575,pytago.pytago.go_ast.parsing.dump._format,75,78,2,performance,Poorly optimized code regions,The indentation is not properly handled.
+7576,pytago.examples.typecall.main,30,32,5,multiprocessing,Potential issue managing multiple components,The cause is that the type() function is not defined in Python 3.
+7577,pytago.examples.typecall.main,11,13,5,multiprocessing,Potential issue managing multiple components,The cause is that the context manager is not being called.
+7578,pytago.pytago.go_ast.core,2006,2007,4,api-configuration,Internal api configuration,The cause is that the scope is not defined.
+7579,pytago.pytago.go_ast.core,314,315,5,multiprocessing,Potential issue managing multiple components,The cause is that the code is not written in a way that makes it clear what the function does. The function is called generic_visit and it takes a node as an argument. The function returns a value of type Any. It is not clear what the function does.
+7580,pytago.pytago.go_ast.core,312,317,5,multiprocessing,Potential issue managing multiple components,The cause is that the skipper function is not defined in the Python 3 code.
+7581,pytago.pytago.go_ast.core,3006,3007,0,module,Issues pertaining to module integration,The cause is that the context manager is not being called.
+7582,pytago.pytago.go_ast.py_snippets,39,40,3,integration,Packaging/Integration Issue,The cause is that the list comprehension is not being executed in the right order. The list comprehension is executed in the order of the elements of the list. The result of the list comprehension is not being assigned to a variable.
+7583,pytago.pytago.go_ast.py_snippets,1222,1225,3,integration,Packaging/Integration Issue,I can't.
+7584,pytago.pytago.go_ast.py_snippets,1181,1182,1,syntax,Indeterminate syntax issues,multiple statements on one line (def)
+7585,pytago.pytago.go_ast.py_snippets,40,41,1,syntax,Indeterminate syntax issues,missing whitespace around parameter equals

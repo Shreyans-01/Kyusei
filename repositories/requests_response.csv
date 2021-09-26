@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+6243,requests.requests.models.Response.iter_content.generate,781,784,4,api-configuration,Internal api configuration,The cause is that the ChunkedEncodingError exception is not raised in the try block.
+6244,requests.requests.auth.HTTPDigestAuth.build_digest_header,101,106,0,module,Issues pertaining to module integration,"Yes, I can."
+6245,requests.requests.auth.HTTPDigestAuth.handle_401,216,217,3,integration,Packaging/Integration Issue,The cause is that the cookie is not set.
+6246,requests.requests.sessions.Session.request,461,467,3,integration,Packaging/Integration Issue,The cause is that the code is not using the correct type of object. The code should be using a list instead of a dict.
+6247,requests.requests.sessions.Session.send,658,659,1,syntax,Indeterminate syntax issues,The cause is that the code is not executed.
+6248,requests.requests.sessions.Session.merge_environment_settings,669,671,3,integration,Packaging/Integration Issue,Too many arguments (6/5)
+6249,requests.requests.utils.should_bypass_proxies,633,634,4,api-configuration,Internal api configuration,The cause is that the code is not executed in the context of the current Python interpreter.
+6250,requests.requests.utils.select_proxy,694,695,4,api-configuration,Internal api configuration,The cause is that the bug is in the context.
+6251,requests.requests.cookies.extract_cookies_to_jar,135,140,2,performance,Poorly optimized code regions,The cause is that the MockRequest class is not a subclass of httplib.HTTPResponse.
+6252,requests.requests.utils,27,28,3,integration,Packaging/Integration Issue,The cause is that the bug is in the Python 3 interpreter.
+6253,requests.requests.utils,54,55,4,api-configuration,Internal api configuration,"Yes, I can."

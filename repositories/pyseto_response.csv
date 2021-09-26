@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+7411,pyseto.pyseto.versions.v2,6,7,2,performance,Poorly optimized code regions,The cause is that the Python 3.6.1 interpreter is not able to find the ed25519 module.
+7412,pyseto.pyseto.exceptions,14,19,3,integration,Packaging/Integration Issue,Unnecessary pass statement
+7413,pyseto.pyseto.exceptions,6,7,3,integration,Packaging/Integration Issue,Unnecessary pass statement
+7399,pyseto.pyseto.versions.v3.V3Public.to_paserk,206,207,0,module,Issues pertaining to module integration,Too many arguments (7/5)
+7400,pyseto.pyseto.versions.v4.V4Local.__init__,23,26,5,multiprocessing,Potential issue managing multiple components,Value 'Union' is unsubscriptable
+7401,pyseto.pyseto.versions.v2.V2Local.__init__,25,26,1,syntax,Indeterminate syntax issues,"Yes, I can."
+7402,pyseto.pyseto.versions.v1.V1Public.__init__,117,118,4,api-configuration,Internal api configuration,Useless return at end of function or method
+7403,pyseto.pyseto.versions.v1.V1Public.to_paserk,176,184,4,api-configuration,Internal api configuration,The cause is that the function has a bug.
+7404,pyseto.pyseto.versions.v1.V1Public.to_paserk,179,181,3,integration,Packaging/Integration Issue,The cause is that the memory_cost is a floating point number.
+7405,pyseto.pyseto.key_sodium.SodiumKey.to_paserk,96,97,0,module,Issues pertaining to module integration,Too many arguments (7/5)
+7406,pyseto.pyseto.key_sodium.SodiumKey._encode_pbkw,225,228,1,syntax,Indeterminate syntax issues,Too many arguments (7/5)

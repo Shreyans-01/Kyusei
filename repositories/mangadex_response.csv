@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+7322,mangadex.mangadex.models.CustomList._ListFromDict,412,417,3,integration,Packaging/Integration Issue,The cause is that the attribute name is not defined in the dictionary.
+7323,mangadex.mangadex.api.Api.update_manga,202,203,1,syntax,Indeterminate syntax issues,"The cause is that the interpreter is not able to find the function ""__init__"" in the module ""__main__""."
+7324,mangadex.mangadex.api.Api.follow_manga,656,658,1,syntax,Indeterminate syntax issues,I think it's because the context is not set.
+7325,mangadex.mangadex.api.Api.resend_activation_code,1019,1020,4,api-configuration,Internal api configuration,The cause is that the re.search() function does not support the regular expression syntax of Python 3.
+7326,mangadex.mangadex.api.Api.resend_activation_code,1019,1020,5,multiprocessing,Potential issue managing multiple components,The cause is that the regex engine does not support the Unicode character \u00C0.
+7327,mangadex.mangadex.api.Api,1034,1039,3,integration,Packaging/Integration Issue,The cause is that the regex is not a regular expression.
+7328,mangadex.mangadex.api.Api,997,1000,0,module,Issues pertaining to module integration,The cause is that the code is not a valid code.
+7329,mangadex.mangadex.api.Api,180,183,0,module,Issues pertaining to module integration,The cause is that the function is not defined in the class.
+7330,mangadex.mangadex.api.Api,564,566,3,integration,Packaging/Integration Issue,Access to a protected member _request_url of a client class
+7331,mangadex.mangadex.api.Api,670,676,0,module,Issues pertaining to module integration,The cause is that the following words are not in the dictionary.
+7332,mangadex.mangadex.api.Api,1034,1041,3,integration,Packaging/Integration Issue,The cause is that the URL is not correct.

@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+6600,textual.src.textual.layout.Layout._get_renders,250,255,1,syntax,Indeterminate syntax issues,The cause is that the layout map is not initialized.
+6601,textual.src.textual.layout.Layout.render,296,298,3,integration,Packaging/Integration Issue,Too many local variables (36/15)
+6602,textual.src.textual.widgets._scroll_view.ScrollView,165,166,1,syntax,Indeterminate syntax issues,self.animate is not callable
+6616,textual.src.textual.reactive,26,27,3,integration,Packaging/Integration Issue,The cause is that the function is not defined.
+6617,textual.src.textual.layout,10,11,2,performance,Poorly optimized code regions,The cause is that the context is not set.
+6618,textual.examples.grid,1,6,3,integration,Packaging/Integration Issue,The cause is that the function is not being called.
+6619,textual.examples.grid,1,4,3,integration,Packaging/Integration Issue,Cyclic import (textual.layouts.grid -> textual.widgets -> textual.widgets._scroll_view -> textual.views -> textual.views._dock_view)
+6603,textual.src.textual.widgets._scroll_view.ScrollView,153,161,1,syntax,Indeterminate syntax issues,"The cause is that the function key_up() is called in the main thread, and the function key_pagedown() is called in the worker thread."
+6604,textual.src.textual.widgets._scroll_view.ScrollView,109,111,0,module,Issues pertaining to module integration,The cause is that the function page_up() is not defined.
+6605,textual.src.textual.widgets._scroll_view.ScrollView,113,117,0,module,Issues pertaining to module integration,The problem is that the animation is not being called when the target_y is changed.
+6606,textual.src.textual.widgets._scroll_view.ScrollView,170,172,4,api-configuration,Internal api configuration,The cause is that the function self.animate() is called twice.

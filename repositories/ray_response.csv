@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+7721,ray.python.ray.data.extensions.tensor_extension.TensorDtype.construct_from_string,213,215,5,multiprocessing,Potential issue managing multiple components,The problem is that the pattern is not matched.
+7722,ray.python.ray._private.thirdparty.pathspec.patterns.gitwildmatch,297,302,1,syntax,Indeterminate syntax issues,The cause is that the :class:`GitIgnorePattern` class is deprecated by the :class:`GitWildMatchPattern` class.
+7723,ray.python.ray._private.thirdparty.pathspec.patterns.gitwildmatch,297,301,1,syntax,Indeterminate syntax issues,The cause is that the pattern is not a wildmatch pattern.
+7724,ray.python.ray.workflow.virtual_actor_class.VirtualActorClass._from_class,311,312,3,integration,Packaging/Integration Issue,"The cause is that the function ""pass"" is not defined in the Python 3.x."
+7725,ray.rllib.models.tf.layers.noisy_layer.NoisyLayer,17,18,1,syntax,Indeterminate syntax issues,invalid escape sequence '\e'
+7726,ray.python.ray.tune.automlboard.settings,20,23,5,multiprocessing,Potential issue managing multiple components,The cause is that the function is not declared as a constant.
+7727,ray.python.ray.util.collective.types,69,75,0,module,Issues pertaining to module integration,variable 'reduceOp' in class scope should not be mixedCase
+7728,ray.python.ray.util.collective.types,96,98,3,integration,Packaging/Integration Issue,The cause is that the timeout_ms variable is not set.
+7729,ray.python.ray.util.collective.types,96,97,4,api-configuration,Internal api configuration,The cause is that the timeout_ms variable is not set.
+7730,ray.python.ray.util.collective.types,58,63,0,module,Issues pertaining to module integration,The cause is that the BarrierOptions class is not a subclass of the Queue class.
+7731,ray.rllib.agents.impala.vtrace_torch.multi_from_logits,193,199,1,syntax,Indeterminate syntax issues,The cause is that the code is not using the correct type of tensor.

@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+8456,labyrinth.backend.labyrinth.event_logging.InfluxLogger.remove_game,62,63,2,performance,Poorly optimized code regions,The cause is that the self._GAME_COUNTER is not initialized.
+8457,labyrinth.backend.labyrinth.database.DatabaseGateway,196,199,3,integration,Packaging/Integration Issue,The cause is that the __enter__ method is called before the __exit__ method.
+8458,labyrinth.backend.labyrinth.database.DatabaseGateway,75,78,5,multiprocessing,Potential issue managing multiple components,The problem is that the last_observed_timestamp is not updated when the game is updated.
+8459,labyrinth.backend.labyrinth.database.DatabaseGateway,197,201,3,integration,Packaging/Integration Issue,The cause is that the __enter__ method is called before the __exit__ method.
+8460,labyrinth.backend.labyrinth.model.exceptions,52,53,3,integration,Packaging/Integration Issue,Unnecessary pass statement
+8461,labyrinth.backend.labyrinth.model.exceptions,19,22,0,module,Issues pertaining to module integration,The cause is that the exception is raised when the state of the object is invalid.
+8462,labyrinth.backend.labyrinth.model.exceptions,46,47,1,syntax,Indeterminate syntax issues,Unnecessary pass statement
+8463,labyrinth.backend.labyrinth.model.bots,18,23,2,performance,Poorly optimized code regions,"The cause is that the function ""request"" is not defined in the module ""requests""."
+8464,labyrinth.experiments.serialization.maze_to_string_array,75,76,5,multiprocessing,Potential issue managing multiple components,"Yes, I can."
+8465,labyrinth.experiments.exhsearch.benchmark,25,28,1,syntax,Indeterminate syntax issues,"The cause is that the value of the variable ""case_name"" is not a list."
+8466,labyrinth.backend.labyrinth.create_app,68,70,2,performance,Poorly optimized code regions,The cause is that the DatabaseGateway.close_database() function is called in the teardown_request() function.

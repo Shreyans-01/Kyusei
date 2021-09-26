@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+6119,httpie.httpie.output.formatters.json.JSONFormatter.format_body,12,13,4,api-configuration,Internal api configuration,I don't know.
+6120,httpie.httpie.cli.argtypes.KeyValueArgType.tokenize,110,111,4,api-configuration,Internal api configuration,"Yes, the cause is that the string is not properly tokenized."
+6121,httpie.httpie.cli.argparser.HTTPieArgumentParser.parse_args,70,71,3,integration,Packaging/Integration Issue,The cause is that the code is not executed.
+6122,httpie.httpie.cli.argparser.HTTPieArgumentParser._parse_items,389,396,5,multiprocessing,Potential issue managing multiple components,The cause is that the Content-Type header is not set in the request.
+6123,httpie.httpie.plugins.base.FormatterPlugin.format_body,141,144,4,api-configuration,Internal api configuration,The cause is that the return value of the function is not a string.
+6124,httpie.httpie.output.formatters.colors.get_lexer,111,113,3,integration,Packaging/Integration Issue,The cause is that the function get_mimetype() is called twice.
+6125,httpie.httpie.cli.argtypes.parse_format_options,187,191,1,syntax,Indeterminate syntax issues,I don't know.
+6126,httpie.httpie.output.writer.write_stream,56,61,3,integration,Packaging/Integration Issue,The cause is that the buffer is not large enough to hold the output.
+6127,httpie.httpie.output.formatters.colors,9,10,0,module,Issues pertaining to module integration,It is a bug in the terminal256.py module.
+6128,httpie.httpie.output.formatters.colors,8,9,3,integration,Packaging/Integration Issue,It is a bug in the Python 3 interpreter.
+6129,httpie.httpie.output.formatters.colors,10,15,2,performance,Poorly optimized code regions,The cause is that the lexer is not able to find the class PygmentsHttpLexer.

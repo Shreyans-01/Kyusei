@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+6007,flask.flask.app.Flask.run,827,831,2,performance,Poorly optimized code regions,The cause is that the if statement is not executed.
+6008,flask.flask.app.Flask.test_request_context,1945,1947,0,module,Issues pertaining to module integration,The cause is that the test_environ_builder.__call__() method is not called.
+6009,flask.flask.wrappers.Request.json,105,106,5,multiprocessing,Potential issue managing multiple components,Import outside toplevel (warnings.warn)
+6010,flask.flask.wrappers.Request.get_json,155,156,2,performance,Poorly optimized code regions,The cause is that the cache is not initialized.
+6011,flask.flask.sessions.SessionInterface.get_expiration_time,250,251,3,integration,Packaging/Integration Issue,The cause is that the session object is not being closed properly.
+6012,flask.flask.ctx.copy_current_request_context.wrapper,108,109,0,module,Issues pertaining to module integration,The cause is that the context manager is not being used correctly.
+6013,flask.flask.helpers.send_file,431,441,4,api-configuration,Internal api configuration,The cause is that the Python 3.3.2 version of the Flask web framework
+6014,flask.flask.helpers.find_package,790,791,1,syntax,Indeterminate syntax issues,"Unnecessary ""elif"" after ""return"""
+6015,flask.flask.helpers._PackageBoundObject,832,833,0,module,Issues pertaining to module integration,The cause is that the context is not set.
+6016,flask.flask.sessions.TaggedJSONSerializer,79,84,1,syntax,Indeterminate syntax issues,"Class 'TaggedJSONSerializer' inherits from object, can be safely removed from bases in python3"
+6017,flask.flask.ctx.AppContext,156,157,5,multiprocessing,Potential issue managing multiple components,The cause is that the application object is not bound explicitly.

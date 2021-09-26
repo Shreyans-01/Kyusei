@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+7608,aiospotify.aiospotify.client.Client.get_full_album,130,134,1,syntax,Indeterminate syntax issues,The cause is that the code is not executed in the context of the current thread.
+7609,aiospotify.aiospotify.typings.objects.PagingObjectData,18,23,4,api-configuration,Internal api configuration,The cause is that the list comprehension is not a generator.
+7610,aiospotify.aiospotify.typings.objects.ImageData,28,30,3,integration,Packaging/Integration Issue,The cause is that the variable 'url' is not initialized.
+7611,aiospotify.aiospotify.typings.objects.RecommendationData,111,112,4,api-configuration,Internal api configuration,The cause is that the list is not a list.
+7612,aiospotify.aiospotify.typings.objects.DisallowsData,194,196,0,module,Issues pertaining to module integration,"The cause is that the ""interrupting_playback"" and ""pausing"" are not defined in the Python 3.6."
+7613,aiospotify.aiospotify.objects.track.Track,103,106,5,multiprocessing,Potential issue managing multiple components,"Yes, the cause is that the __repr__ method is called before the __str__ method."
+7614,aiospotify.aiospotify.objects.track.PlaylistTrack,139,142,1,syntax,Indeterminate syntax issues,The cause is that the __repr__ method is called when the object is printed.
+7615,aiospotify.aiospotify.objects.album.SimpleAlbum,38,39,4,api-configuration,Internal api configuration,"The cause is that the data.get() function returns a list of tuples, and the get() function in the context manager returns a single value."
+7616,aiospotify.aiospotify.utils._MissingSentinel,33,34,5,multiprocessing,Potential issue managing multiple components,Value 'Literal' is unsubscriptable
+7617,aiospotify.aiospotify.client.Client,457,461,1,syntax,Indeterminate syntax issues,The cause is that the code is not using the correct type of object.
+7618,aiospotify.aiospotify.typings.objects,46,48,3,integration,Packaging/Integration Issue,The cause is that the code is not executed.

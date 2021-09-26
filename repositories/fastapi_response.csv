@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+6437,fastapi.fastapi.security.oauth2.OAuth2PasswordBearer.__init__,146,147,5,multiprocessing,Potential issue managing multiple components,The cause is that the error is not handled properly.
+6438,fastapi.fastapi.params.Path.__init__,76,77,5,multiprocessing,Potential issue managing multiple components,The cause is that the Optional type is not a subclass of the Boolean type.
+6439,fastapi.fastapi.params.Query.__init__,103,104,0,module,Issues pertaining to module integration,"The cause is that the following words are not defined in Python 3:Context, Bug."
+6440,fastapi.fastapi.params.Body.__init__,226,228,2,performance,Poorly optimized code regions,"The cause is that the following words are not defined in Python 3:Context, Bug."
+6441,fastapi.fastapi.routing.APIRouter.add_api_route,488,489,5,multiprocessing,Potential issue managing multiple components,Value 'Optional' is unsubscriptable
+6442,fastapi.fastapi.routing.APIRouter.api_route,559,564,1,syntax,Indeterminate syntax issues,The cause is that the context is not set.
+6443,fastapi.fastapi.routing.APIRouter.post,847,851,3,integration,Packaging/Integration Issue,"The cause is that the ""responses"" attribute is not defined."
+6444,fastapi.fastapi.applications.FastAPI.__init__,42,43,2,performance,Poorly optimized code regions,The cause is that the function is not defined.
+6445,fastapi.fastapi.applications.FastAPI.add_api_route,239,240,4,api-configuration,Internal api configuration,The cause is that the bug is in the context.
+6446,fastapi.fastapi.applications.FastAPI.api_route,273,274,4,api-configuration,Internal api configuration,It is a bug in the Python 3.3.0 release.
+6447,fastapi.fastapi.applications.FastAPI.include_router,344,345,1,syntax,Indeterminate syntax issues,The cause is that the Optional type is not a subclass of the Boolean type.

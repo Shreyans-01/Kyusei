@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+7038,bokeh.bokeh.core.property.descriptors.AliasPropertyDescriptor.__init__,145,146,2,performance,Poorly optimized code regions,The cause is that the name attribute is not initialized.
+7039,bokeh.bokeh.server.contexts.ApplicationContext.create_session_if_needed,229,232,3,integration,Packaging/Integration Issue,The cause is that the session_context._token is not set to the token.
+7040,bokeh.bokeh.client.connection.ClientConnection.__init__,93,95,3,integration,Packaging/Integration Issue,The cause is that the max_message_size parameter is not defined.
+7041,bokeh.bokeh.core.validation.decorators.error,105,111,2,performance,Poorly optimized code regions,The cause is that the decorator is not called in the right place. The decorator is called before the ``check`` method is called. The ``check`` method is called after the ``validate`` method.
+7042,bokeh.bokeh.core.property.alias.Alias,72,76,0,module,Issues pertaining to module integration,The cause is that the base_name is not a string.
+7043,bokeh.examples.howto.ipywidgets.ipyleaflet_tiles,1,3,1,syntax,Indeterminate syntax issues,The cause is that the IPyWidget class is not defined in the IPywidgets_bokeh module.
+7044,bokeh.examples.howto.ipywidgets.ipyleaflet_tiles,1,2,4,api-configuration,Internal api configuration,The cause is that the IPyWidget class is not a subclass of IPyWidgetBase.
+7045,bokeh.examples.plotting.file.polar_subcoordinates,34,35,2,performance,Poorly optimized code regions,The cause is that the context is not set.
+7046,bokeh.examples.plotting.file.lorenz,29,31,0,module,Issues pertaining to module integration,"expected 2 blank lines after class or function definition, found 1"
+7047,bokeh.bokeh.server.django.static,27,32,2,performance,Poorly optimized code regions,The cause is that the function is not being called.
+7048,bokeh.bokeh.sphinxext.bokeh_roles.bokeh_commit,97,98,4,api-configuration,Internal api configuration,Too many arguments (7/5)

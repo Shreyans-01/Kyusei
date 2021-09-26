@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+6700,httpx.httpx._models.Response.__init__,1215,1218,0,module,Issues pertaining to module integration,The cause is that the `response.next_request` is not set when the redirect is received.
+6701,httpx.httpx._models.Response.links,1524,1528,1,syntax,Indeterminate syntax issues,The cause is that the header links are not parsed.
+6702,httpx.httpx._client.BaseClient._get_proxy_map,216,220,0,module,Issues pertaining to module integration,"The problem is that the value of the key is not a string, but a tuple."
+6703,httpx.httpx._client.Client.request,753,755,3,integration,Packaging/Integration Issue,The cause is that the timeout argument is not a tuple. It is a list.
+6704,httpx.httpx._client.Client.stream,809,810,0,module,Issues pertaining to module integration,The cause is that the bug is in the context.
+6705,httpx.httpx._client.Client.put,1121,1126,5,multiprocessing,Potential issue managing multiple components,The cause is that the `timeout` argument is not a `TimeoutTypes` argument.
+6706,httpx.httpx._client.AsyncClient.__init__,1363,1372,2,performance,Poorly optimized code regions,The cause is that the code is not using the proxy.
+6707,httpx.httpx._client.AsyncClient._init_proxy_transport,1409,1415,2,performance,Poorly optimized code regions,"The cause is that the ""verify"" keyword is not defined in Python 3."
+6708,httpx.httpx._client.AsyncClient.request,1453,1461,4,api-configuration,Internal api configuration,The cause is that the request object is not a Response object.
+6709,httpx.httpx._client.AsyncClient.request,1451,1452,5,multiprocessing,Potential issue managing multiple components,The cause is that the function is not called in the right context.
+6710,httpx.httpx._client.AsyncClient.stream,1503,1510,3,integration,Packaging/Integration Issue,The cause is that the `httpx.request()` function is not thread-safe.

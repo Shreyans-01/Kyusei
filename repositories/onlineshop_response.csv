@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+8395,onlineshop.product_social_media.views.SocialProductViewset.comments_list,44,48,4,api-configuration,Internal api configuration,The cause is that the comment is not stored in the database.
+8396,onlineshop.user_perms.permissions.IsAdminOrReadOnly.has_object_permission,29,30,2,performance,Poorly optimized code regions,The cause is that the permissions.SAFE_METHODS is not a list.
+8397,onlineshop.social_media.serializers.LikeSerializer,40,47,0,module,Issues pertaining to module integration,The problem is that the filter() method of the Like class is not defined in the context.
+8398,onlineshop.products.views.CategoryViewset,17,20,1,syntax,Indeterminate syntax issues,The problem is that the category object is not passed to the serializer.
+8399,onlineshop.social_media.models,1,6,3,integration,Packaging/Integration Issue,"The problem is that the field ""content_type"" is not defined in the model."
+8400,onlineshop.social_media.models,2,9,4,api-configuration,Internal api configuration,The cause is that the model has a field named 'text' which is a CharField.
+8401,onlineshop.orders.models,3,7,1,syntax,Indeterminate syntax issues,Unable to import 'django.core.validators'
+8402,onlineshop.orders.models,1,2,1,syntax,Indeterminate syntax issues,The cause is that the CASCADE and PROTECT methods are not implemented in the Django ORM.
+8403,onlineshop.orders.models,2,7,0,module,Issues pertaining to module integration,The problem is that the code is not executed in the right order.
+8404,onlineshop.orders.views,3,6,0,module,Issues pertaining to module integration,The cause is that the context manager is not being called.
+8405,onlineshop.product_social_media.serializers,2,5,3,integration,Packaging/Integration Issue,The problem is that the context manager is not being used.

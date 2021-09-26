@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+8556,sentry.src.sentry.auth.providers.saml2.generic.views.SAML2ConfigureView.dispatch,16,23,3,integration,Packaging/Integration Issue,The cause is that the SAML metadata URL is not set correctly.
+8557,sentry.src.sentry.api.serializers.models.release.ReleaseSerializer.get_attrs,393,404,1,syntax,Indeterminate syntax issues,The cause is that the release_new_groups is not updated when the item is deleted.
+8558,sentry.src.sentry.api.serializers.models.alert_rule_trigger_action.AlertRuleTriggerActionSerializer.human_desc,11,12,3,integration,Packaging/Integration Issue,"Unnecessary ""elif"" after ""return"""
+8559,sentry.src.sentry.tagstore.snuba.backend.SnubaTagStorage.__get_tag_key_and_top_values,119,124,5,multiprocessing,Potential issue managing multiple components,The cause is that the group_id is not set in the constructor.
+8560,sentry.src.sentry.integrations.jira.integration.JiraIntegration.get_create_issue_config,560,566,1,syntax,Indeterminate syntax issues,The cause is that the `group` is not a valid Python 3 object.
+8561,sentry.src.sentry.integrations.cloudflare.webhook.CloudflareWebhookEndpoint.post,204,205,1,syntax,Indeterminate syntax issues,The cause is that the signature is not defined.
+8562,sentry.src.sentry.api.serializers.rest_framework.release.ReleaseSerializer,57,63,3,integration,Packaging/Integration Issue,The cause is that the field is not declared as required.
+8563,sentry.src.sentry.incidents.subscription_processor.SubscriptionProcessor.handle_incident_severity_update,376,377,0,module,Issues pertaining to module integration,"Unnecessary ""elif"" after ""break"""
+8564,sentry.src.sentry.web.frontend.project_event,1,3,5,multiprocessing,Potential issue managing multiple components,Unable to import 'django.core.urlresolvers'
+8565,sentry.src.sentry.web.frontend.project_event,2,8,3,integration,Packaging/Integration Issue,The cause is that the project view is not able to handle the redirect.
+8566,sentry.src.sentry.plugins.bases.issue2,6,7,1,syntax,Indeterminate syntax issues,"The cause is that the function format_html() is not defined in the module django.utils.html. The function format_html() is defined in the module django.utils.html, but it is not imported in the module django.utils.pyformat_html()."

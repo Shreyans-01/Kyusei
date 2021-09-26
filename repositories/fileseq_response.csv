@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+7987,fileseq.src.fileseq.filesequence.FileSequence.__init__,53,54,0,module,Issues pertaining to module integration,The cause is that the class is not initialized.
+7985,fileseq.src.fileseq.filesequence.FileSequence.yield_sequences_in_list.frames_to_seq,775,778,3,integration,Packaging/Integration Issue,The cause is that the function getPaddingChars() is not defined in the class Sequence.
+7986,fileseq.src.fileseq.filesequence.FileSequence.yield_sequences_in_list.frames_to_seq,776,779,2,performance,Poorly optimized code regions,The cause is that the decimal_places argument is not a tuple.
+7988,fileseq.src.fileseq.filesequence.FileSequence.__init__,53,57,2,performance,Poorly optimized code regions,The cause is that the string is not initialized.
+7989,fileseq.src.fileseq.filesequence.FileSequence.setDirname,229,230,3,integration,Packaging/Integration Issue,"The cause is that the dirname function returns a string, and the endswith function returns a boolean."
+7990,fileseq.src.fileseq.filesequence.FileSequence.yield_sequences_in_list,789,790,3,integration,Packaging/Integration Issue,The cause is that the frame_pad is not defined in the Python 3.x.
+7991,fileseq.src.fileseq.filesequence.FileSequence.yield_sequences_in_list,666,671,0,module,Issues pertaining to module integration,The cause is that the code is trying to determine if the files exist on disk.
+7992,fileseq.src.fileseq.filesequence.FileSequence.yield_sequences_in_list,780,783,1,syntax,Indeterminate syntax issues,"The cause is that the function finish_new_seq() is defined in the module ""__main__"" and it is called from the module ""__main__""."
+7993,fileseq.src.fileseq.filesequence.FileSequence.findSequencesOnDisk,846,849,5,multiprocessing,Potential issue managing multiple components,Too many arguments (6/5)
+7994,fileseq.src.fileseq.filesequence.FileSequence.findSequenceOnDisk,977,979,3,integration,Packaging/Integration Issue,The cause is that the Python 3 code is not a valid Python 3 code.
+7995,fileseq.src.fileseq.frameset.FrameSet.__new__,98,103,3,integration,Packaging/Integration Issue,The cause is that the FrameSet object is not initialized.

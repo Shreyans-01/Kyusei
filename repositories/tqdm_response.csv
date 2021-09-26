@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+6910,tqdm.tqdm.contrib.discord.tqdm_discord.display,97,98,0,module,Issues pertaining to module integration,The cause is that the tqdm_discord function is not a decorator.
+6911,tqdm.tqdm.contrib.utils_worker.MonoWorker.submit,30,31,2,performance,Poorly optimized code regions,The cause is that the context is not set.
+6912,tqdm.tqdm.std.tqdm.pandas,665,666,4,api-configuration,Internal api configuration,The cause is that the context manager is not being called.
+6913,tqdm.tqdm.std.tqdm.wrapattr,1481,1486,2,performance,Poorly optimized code regions,The cause is that `read()` and `write()` are not defined in Python 3.
+6914,tqdm.tqdm.taskbar.meta_reporter.MetaReporter,34,37,1,syntax,Indeterminate syntax issues,"The cause is that the ""self.reporters"" list is not a list."
+6915,tqdm.tqdm.taskbar.PlatformSpecificProgressReporter.PlatformSpecificProgressReporter,2,3,1,syntax,Indeterminate syntax issues,"The cause is that the function ""raise NotImplementedError()"" is not implemented in Python 3."
+6916,tqdm.examples.7zx.main,65,66,5,multiprocessing,Potential issue managing multiple components,"The cause is that the code is not using the ""args"" dictionary."
+6917,tqdm.benchmarks.benchmarks.Comparison,25,29,3,integration,Packaging/Integration Issue,The cause is that the method is not defined in the class.
+6918,tqdm.tqdm._tqdm_pandas.tqdm_pandas,12,14,4,api-configuration,Internal api configuration,The cause is that the type object is not a class object.
+6919,tqdm.tqdm.cli.main,246,247,0,module,Issues pertaining to module integration,The cause is that the copyfile function is not defined in the shutil module.
+6920,tqdm.tqdm.utils.ObjectWrapper,87,88,2,performance,Poorly optimized code regions,The cause is that the __getattr__() method is not defined in the class.

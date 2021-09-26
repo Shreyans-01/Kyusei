@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+8231,Cura.plugins.ImageReader.ImageReaderUI.ImageReaderUI._createConfigUI,85,88,4,api-configuration,Internal api configuration,The cause is that the QQmlContext.setContextProperty() method is not called when the QQmlContext is created.
+8232,Cura.plugins.ImageReader.ImageReader.ImageReader._generateSceneNode,167,168,3,integration,Packaging/Integration Issue,"The cause is that the indexing operation is not done in a way that is compatible with the Python 3 indexing syntax. The indexing operation in Python 3 is to use a slice object, and the slice object has a start and an end. In this case, the start of the slice object is at the first"
+8233,Cura.plugins.PerObjectSettingsTool.SettingOverrideModel.SettingOverrideModel._onDecoratorsChanged,55,62,5,multiprocessing,Potential issue managing multiple components,The cause is that the decorator is not connected to the event.
+8234,Cura.plugins.CuraEngineBackend.StartSliceJob.StartSliceJob,135,146,1,syntax,Indeterminate syntax issues,The problem is that the message is not properly encoded.
+8235,Cura.plugins.LayerView.LayerView.LayerView,142,145,3,integration,Packaging/Integration Issue,The cause is that the function getController() is not defined.
+8236,Cura.cura.LayerData.Layer.__init__,72,73,4,api-configuration,Internal api configuration,The cause is that the variable 'self' is not defined in the scope of the function.
+8237,Cura.plugins.CuraEngineBackend.CuraEngineBackend,13,14,2,performance,Poorly optimized code regions,The cause is that the decorator is not applied to the right class.
+8238,Cura.plugins.CuraProfileWriter.CuraProfileWriter,7,12,0,module,Issues pertaining to module integration,The cause is that the ProfileWriter class is not a subclass of UM.Settings.ProfileWriter.
+8239,Cura.plugins.PerObjectSettingsTool,6,12,3,integration,Packaging/Integration Issue,"The cause is that the i18n_catalog.i18nc(""@label"", ""Per Object Settings Tool"") function is not defined in the Python 3.3."
+8240,Cura.cura.ConvexHullNode,8,9,4,api-configuration,Internal api configuration,"Yes, I can."
+8241,Cura.cura.LayerDataDecorator,1,4,5,multiprocessing,Potential issue managing multiple components,The cause is that the decorator is not called in the right place.

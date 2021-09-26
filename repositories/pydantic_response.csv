@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+6808,pydantic.pydantic.mypy.ModelConfigData.__init__,554,556,2,performance,Poorly optimized code regions,"The cause is that the function ""get_field_name"" is not defined in the class ""Field""."
+6809,pydantic.pydantic.mypy.ModelConfigData.__init__,556,562,5,multiprocessing,Potential issue managing multiple components,"The cause is that the ""self.frozen"" attribute is not initialized in the constructor."
+6810,pydantic.pydantic.main.ModelMetaclass.__new__,141,142,1,syntax,Indeterminate syntax issues,Using variable 'SetStr' before assignment
+6811,pydantic.pydantic.color.Color.as_rgb,123,124,1,syntax,Indeterminate syntax issues,The cause is that the function float_to_255() is not defined in Python 3.
+6812,pydantic.pydantic.types.ConstrainedStr.validate,401,402,3,integration,Packaging/Integration Issue,"The cause is that the Python 3 code is not able to handle the value of ""len(value) > cls.curtail_length"" correctly."
+6813,pydantic.pydantic.env_settings.EnvSettingsSource.__call__,148,149,5,multiprocessing,Potential issue managing multiple components,Value 'Optional' is unsubscriptable
+6814,pydantic.pydantic.decorator.validate_arguments,30,35,5,multiprocessing,Potential issue managing multiple components,The cause is that the decorator is not able to find the function in the function decorator.
+6815,pydantic.pydantic.fields.Field,215,218,4,api-configuration,Internal api configuration,Redefining built-in 'repr'
+6816,pydantic.pydantic.utils.generate_model_signature,203,204,0,module,Issues pertaining to module integration,"Yes, I can."
+6817,pydantic.pydantic.generics.GenericModel,36,39,0,module,Issues pertaining to module integration,"Yes, I can."
+6818,pydantic.pydantic.generics.GenericModel,42,43,4,api-configuration,Internal api configuration,"The cause is that the ""context"" keyword is not defined in Python 3."

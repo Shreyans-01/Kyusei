@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+4905,earthquakes.app.earthquakes_app.EarthquakesApp.filter_points,317,320,4,api-configuration,Internal api configuration,The cause is that the date_range parameter is not a tuple.
+4906,earthquakes.app.earthquakes_app.EarthquakesApp.count_timeline,366,367,5,multiprocessing,Potential issue managing multiple components,No exception type(s) specified
+4907,earthquakes.scripts.scrapping.build_dataset,18,20,5,multiprocessing,Potential issue managing multiple components,ambiguous variable name 'l'
+4908,earthquakes.scripts.scrapping.build_dataset,5,7,1,syntax,Indeterminate syntax issues,The cause is that the file name is not a valid Python file name.
+4909,earthquakes.scripts.scrapping.download_json,8,9,1,syntax,Indeterminate syntax issues,Unused set_trace imported from pdb as bp
+4910,earthquakes.scripts.scrapping.download_json,60,66,0,module,Issues pertaining to module integration,The cause is that the max_radius parameter is not defined.
+4911,earthquakes.app.app.earthquakes_page,16,17,0,module,Issues pertaining to module integration,No exception type(s) specified
+4912,earthquakes.app.earthquakes_app.get_earthquakes_df,129,132,0,module,Issues pertaining to module integration,The cause is that the code is not using the correct format string. The format string should be {:02} instead of {:02}.
+4913,earthquakes.app.earthquakes_app.EarthquakesApp,349,350,2,performance,Poorly optimized code regions,The cause is that the context manager is not being called.
+4914,earthquakes.app.earthquakes_app,21,30,4,api-configuration,Internal api configuration,The cause is that the translation function is not defined.
+4915,earthquakes.app.earthquakes_app,15,19,4,api-configuration,Internal api configuration,"The cause is that the function ""plot"" is not defined in the module ""hvplot""."

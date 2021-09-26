@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+7149,sanic.sanic.app.Sanic.websocket.response.websocket_handler,396,400,0,module,Issues pertaining to module integration,Access to a protected member _protocol of a client class
+7150,sanic.sanic.app.Sanic.__init__,31,35,2,performance,Poorly optimized code regions,"The cause is that the function has a variable called name, which is not defined."
+7151,sanic.sanic.app.Sanic.head,254,260,2,performance,Poorly optimized code regions,Too many arguments (6/5)
+7152,sanic.sanic.app.Sanic.patch,278,280,3,integration,Packaging/Integration Issue,"The cause is that the ""self"" variable is not defined in the following code."
+7153,sanic.sanic.app.Sanic.create_server,934,935,5,multiprocessing,Potential issue managing multiple components,Too many arguments (10/5)
+7154,sanic.sanic.app.Sanic._helper,1027,1030,2,performance,Poorly optimized code regions,The cause is that the code is not using the correct type of variable. The code should be:
+7155,sanic.sanic.router.Router.add,175,180,4,api-configuration,Internal api configuration,The cause is that the version string is not properly encoded.
+7156,sanic.sanic.blueprints.Blueprint.__init__,33,36,5,multiprocessing,Potential issue managing multiple components,The cause is that the function is not defined.
+7157,sanic.sanic.response.BaseHTTPResponse.cookies,50,51,4,api-configuration,Internal api configuration,The cause is that the CookieJar class is not a subclass of the Cookie class.
+7158,sanic.sanic.handlers.ErrorHandler._render_traceback_html,45,51,3,integration,Packaging/Integration Issue,The cause is that the exception is not being caught.
+7159,sanic.sanic.cookies.CookieJar.__setitem__,51,52,4,api-configuration,Internal api configuration,The cause is that the cookie is not set.

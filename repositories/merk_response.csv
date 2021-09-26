@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+8124,merk.merk.widgets.chat.Window.__init__,133,134,5,multiprocessing,Potential issue managing multiple components,The cause is that the QIcon() function is not defined in Python 3.
+8125,merk.merk.widgets.chat.Window.__init__,296,302,2,performance,Poorly optimized code regions,The cause is that the scaling of the pixmap is not done correctly.
+8126,merk.merk.widgets.chat.Window.__init__,231,239,4,api-configuration,Internal api configuration,The cause is that the QAction class has a method called triggered.
+8127,merk.merk.widgets.chat.Window.eventFilter,634,638,5,multiprocessing,Potential issue managing multiple components,"The cause is that the user_hostmask is not a string, but a tuple."
+8128,merk.merk.widgets.chat.Window.saveLogs,1069,1070,3,integration,Packaging/Integration Issue,The if statement can be replaced with 'var = bool(test)'
+8129,merk.merk.widgets.textstyler.MiniStyler.__init__,141,143,1,syntax,Indeterminate syntax issues,"The cause is that the ""self.setBold.stateChanged"" is not connected to the ""self.checkBold""."
+8130,merk.merk.dialog.export.Dialog.__init__,102,103,2,performance,Poorly optimized code regions,The cause is that the super() function is called in the __init__() function.
+8131,merk.merk.dialog.settings.Dialog.__init__,252,255,3,integration,Packaging/Integration Issue,Undefined variable 'QVBoxLayout'
+8132,merk.merk.dialog.settings.Dialog.__init__,190,196,3,integration,Packaging/Integration Issue,The cause is that the QCheckBox is not a widget.
+8133,merk.merk.dialog.settings.Dialog.__init__,379,380,3,integration,Packaging/Integration Issue,The cause is that the checkbox is not checked.
+8134,merk.merk.dialog.settings.Dialog.__init__,371,373,3,integration,Packaging/Integration Issue,The cause is that the stateChanged signal is not connected to the changedSetting method.

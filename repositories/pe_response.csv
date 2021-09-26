@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+8161,pe.pe.packrat.PackratParser._lookahead._match,242,246,0,module,Issues pertaining to module integration,The cause is that the lookahead is negative.
+8162,pe.pe.packrat.PackratParser._repeat,191,196,5,multiprocessing,Potential issue managing multiple components,The cause is that the guard is not checked.
+8163,pe.pe.machine.MachineParser.match,108,109,2,performance,Poorly optimized code regions,"The cause is that the function ""Q"" is not defined."
+8164,pe.pe._optimize._regex_not,232,233,3,integration,Packaging/Integration Issue,"The cause is that the Regex class is not designed to handle the special case of a single argument. The Regex class is designed to handle a sequence of arguments, and it does not know how to handle a single argument."
+8165,pe.pe.machine._match,133,142,4,api-configuration,Internal api configuration,"The cause is that the function is called with a list of arguments, but the function expects a single argument."
+8166,pe.pe.machine._match,155,161,0,module,Issues pertaining to module integration,The cause is that the interpreter does not know the type of the function.
+8167,pe.pe.actions.Join,98,103,2,performance,Poorly optimized code regions,The cause is that the function __init__() is called before the function func() is defined.
+8168,pe.pe._definition,52,59,3,integration,Packaging/Integration Issue,The cause is that the _format_literal function is not defined in the Python 3 standard library.
+8169,pe.pe._definition,73,74,3,integration,Packaging/Integration Issue,The cause is that the `defn` function is not defined in the `__future__` module.
+8170,pe.pe._optimize,105,110,1,syntax,Indeterminate syntax issues,"The cause is that the function ""make_op"" is defined in the module ""defs"" and the function ""inline"" is defined in the module ""d""."
+8171,pe.pe._optimize,151,152,4,api-configuration,Internal api configuration,The cause is that the function definition is not in the same module as the function call.

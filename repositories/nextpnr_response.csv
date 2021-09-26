@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+8352,nextpnr.pypi-nexus.setup,3,5,2,performance,Poorly optimized code regions,The cause is that the context manager is not being called.
+8353,nextpnr.pypi-nexus.setup,2,12,0,module,Issues pertaining to module integration,Unused find_packages imported from setuptools
+8354,nextpnr.pypi-nexus.setup,1,5,0,module,Issues pertaining to module integration,The cause is that the parse_git() function is not called in the setup() function.
+8355,nextpnr.pypi-nexus.yowasp_nextpnr_nexus,12,15,4,api-configuration,Internal api configuration,The cause is that the importlib_resources module is not available in Python 3.6.
+8356,nextpnr.pypi-nexus.yowasp_nextpnr_nexus,3,5,3,integration,Packaging/Integration Issue,The cause is that the pathlib module is not imported.
+8334,nextpnr.pypi-gowin.yowasp_nextpnr_gowin._run_wasm_app,17,18,0,module,Issues pertaining to module integration,The cause is that the importlib_resources.read_binary() function is not able to read the wasm file.
+8335,nextpnr.pypi-nexus.yowasp_nextpnr_nexus._run_wasm_app,41,42,3,integration,Packaging/Integration Issue,The cause is that the print statement is not executed.
+8336,nextpnr.pypi-nexus.yowasp_nextpnr_nexus._run_wasm_app,17,23,5,multiprocessing,Potential issue managing multiple components,The cause is that the importlib_resources.read_binary() function is not able to read the binary file from the wasm file.
+8337,nextpnr.pypi-ice40.setup,2,5,1,syntax,Indeterminate syntax issues,The cause is that the parse_git function is not defined in the setuptools_scm module.
+8338,nextpnr.pypi-ice40.setup,3,4,0,module,Issues pertaining to module integration,The cause is that the bug is in the context.
+8339,nextpnr.pypi-ice40.yowasp_nextpnr_ice40,3,4,4,api-configuration,Internal api configuration,The cause is that the context manager is not being called.

@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+6506,rich.rich.__main__.ColorBox.__rich_console__,31,36,5,multiprocessing,Potential issue managing multiple components,The cause is that the RGB values are not converted to HSV values.
+6507,rich.rich.syntax.Syntax.from_path,283,290,2,performance,Poorly optimized code regions,"The cause is that the code is not properly indented. The indentation is done by the Python parser, and it does not take into account the indentation of the surrounding code."
+6508,rich.rich.table.Table.grid,232,233,0,module,Issues pertaining to module integration,The cause is that the bug is in the context.
+6509,rich.rich.__main__.make_test_card,75,77,4,api-configuration,Internal api configuration,line too long (178 > 159 characters)
+6510,rich.rich.__main__.make_test_card,78,85,4,api-configuration,Internal api configuration,"The cause is that the ""padding"" argument of the grid function is not a boolean."
+6511,rich.rich.progress.Progress,563,564,2,performance,Poorly optimized code regions,"The cause is that the code is not using the correct type of variable. The variable speed_estimate_period is a float, but it is used as a string."
+6512,rich.rich.syntax.Syntax,198,202,4,api-configuration,Internal api configuration,The cause is that the code is not using the dedent and line_numbers attributes.
+6513,rich.rich.console.Console,599,602,0,module,Issues pertaining to module integration,"The cause is that the code is using the ``safe_box`` option, which is not available on Python 3."
+6514,rich.rich.table.Table,125,132,1,syntax,Indeterminate syntax issues,line too long (171 > 159 characters)
+6515,rich.rich.logging.RichHandler,43,49,5,multiprocessing,Potential issue managing multiple components,"Yes, I can."
+6516,rich.rich.palette,91,99,3,integration,Packaging/Integration Issue,The cause is that the color is not converted to RGB correctly.

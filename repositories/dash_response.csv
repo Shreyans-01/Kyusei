@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+7278,dash.dash.long_callback.managers.diskcache_manager.DiskcacheLongCallbackManager.__init__,25,30,5,multiprocessing,Potential issue managing multiple components,The cause is that the code is not using the multiprocess module.
+7279,dash.dash.long_callback.managers.diskcache_manager.DiskcacheLongCallbackManager.terminate_unhealthy_job,76,78,3,integration,Packaging/Integration Issue,The cause is that the job object is not created until the first time the script is executed.
+7280,dash.dash.long_callback.managers.celery_manager.CeleryLongCallbackManager.__init__,28,29,4,api-configuration,Internal api configuration,The cause is that the context is not set.
+7281,dash.dash.long_callback.managers.celery_manager.CeleryLongCallbackManager.__init__,28,29,3,integration,Packaging/Integration Issue,Locally disabling import-outside-toplevel (C0415)
+7282,dash.components.dash-table.dash_table_base.Format.Format.__init__,80,81,4,api-configuration,Internal api configuration,"The cause is that the ""width"" attribute is not defined."
+7283,dash.dash.development.base_component.Component.__init__,87,88,5,multiprocessing,Potential issue managing multiple components,"The cause is that the list() function returns a new list object, which is not the same as the original list object."
+7284,dash.dash.development.base_component.Component.__init__,85,86,0,module,Issues pertaining to module integration,Locally disabling cyclic-import (R0401)
+7285,dash.dash.development.base_component.Component.to_plotly_json,180,181,5,multiprocessing,Potential issue managing multiple components,Locally disabling no-member (E1101)
+7286,dash.components.dash-core-components.dash_core_components_base.express.send_file,8,9,5,multiprocessing,Potential issue managing multiple components,The cause is that the following code is not working in Python 3.
+7287,dash.dash.dash.Dash.layout,527,528,0,module,Issues pertaining to module integration,The cause is that the function hasattr() is not defined in Python 3.
+7288,dash.dash.dash.Dash.dispatch,1282,1290,4,api-configuration,Internal api configuration,Useless suppression of 'assigning-non-slot'

@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+7880,quimb.quimb.evo.lindblad_eq.gen_l_terms,174,175,2,performance,Poorly optimized code regions,"The cause is that the dot(l, rho) is not evaluated."
+7881,quimb.quimb.evo.lindblad_eq_vectorized.gen_lb_terms,214,215,5,multiprocessing,Potential issue managing multiple components,The cause is that the issparse() function is not implemented in Python 3.
+7882,quimb.quimb.tensor.tensor_1d.MatrixProductState,1790,1797,3,integration,Packaging/Integration Issue,variable 'add_MPS_' in class scope should not be mixedCase
+7883,quimb.quimb.tensor.tensor_1d.MatrixProductState,1790,1791,5,multiprocessing,Potential issue managing multiple components,"Yes, I can."
+7884,quimb.quimb.tensor.tensor_1d.MatrixProductOperator,2962,2963,2,performance,Poorly optimized code regions,variable 'add_MPO_' in class scope should not be mixedCase
+7885,quimb.quimb.tensor.tensor_1d.MatrixProductOperator,2962,2970,5,multiprocessing,Potential issue managing multiple components,The problem is that the __tmp{}__ is not a local variable.
+7886,quimb.quimb.tensor.tensor_2d.PEPS,3635,3639,4,api-configuration,Internal api configuration,"Yes, I can."
+7887,quimb.quimb.tensor.tensor_2d.PEPS,3635,3640,5,multiprocessing,Potential issue managing multiple components,The cause is that the __add__ method is not defined in the class.
+7888,quimb.quimb.tensor.tensor_2d.PEPO,3875,3880,2,performance,Poorly optimized code regions,The cause is that the __add__ method is not defined in the class.
+7889,quimb.quimb.tensor.tensor_2d.PEPO,3875,3878,0,module,Issues pertaining to module integration,The cause is that the __add__ method is not defined in the class.
+7890,quimb.quimb.core.explt,741,743,2,performance,Poorly optimized code regions,"Yes, I can."

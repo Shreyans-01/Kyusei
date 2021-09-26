@@ -1,0 +1,12 @@
+id,location,lineno,end_lineno,category_id,category_name,category_desc,explanation
+7762,ruck.ruck.util._args.HParamsMixin.save_hyperparameters,41,47,5,multiprocessing,Potential issue managing multiple components,Import outside toplevel (warnings)
+7763,ruck.ruck.util._args.HParamsMixin.save_hyperparameters,48,55,0,module,Issues pertaining to module integration,"The cause is that the inspect.signature() function does not return a tuple of (self, *params). It returns a tuple of (self, *params). The first element of the tuple is the class object. The second element is a list of all the parameters. The third element is a list of all"
+7764,ruck.examples.onemax.OneMaxModule.__init__,42,46,4,api-configuration,Internal api configuration,The cause is that the hyperparameters are not saved in the local scope.
+7765,ruck.examples.onemax.OneMaxModule.__init__,40,45,2,performance,Poorly optimized code regions,The cause is that the arguments are not captured in the .hparams property.
+7766,ruck.examples.onemax_ray.OneMaxRayModule.__init__,45,47,3,integration,Packaging/Integration Issue,Unused argument 'member_size'
+7767,ruck.examples.onemax_ray.OneMaxRayModule.__init__,44,46,3,integration,Packaging/Integration Issue,Unused argument 'population_size'
+7768,ruck.examples.onemax_ray.OneMaxRayModule.__init__,47,49,4,api-configuration,Internal api configuration,The cause is that the function save_hyperparameters() is called twice.
+7769,ruck.ruck.functional._mutate.mutate_flip_bit_groups,63,65,0,module,Issues pertaining to module integration,The problem is that the & operator is not commutative.
+7770,ruck.ruck.functional._algorithm.apply_mate_and_mutate,122,123,0,module,Issues pertaining to module integration,The cause is that the population is not a list.
+7771,ruck.ruck.functional._algorithm.factory_simple_ea,212,213,5,multiprocessing,Potential issue managing multiple components,The cause is that the function return_offspring() is not defined.
+7772,ruck.ruck.util._ray.ray_refs_wrapper,105,107,5,multiprocessing,Potential issue managing multiple components,"The cause is that the ""else"" clause is not executed."
