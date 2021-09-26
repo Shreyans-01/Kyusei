@@ -49,21 +49,8 @@ def change_brightness(img, value=30):
     return img
 
 def plot_stars(points_arr, centroid_arr, N=6):
-	# plt.axis('off')
-	# for points in points_arr:
-	# 	plt.scatter(points.T[0], points.T[1], color='black', marker=(5, 1))
-	# plt.savefig('stars.png', bbox_inches='tight')
-	# image = cv2.imread('stars.png')
-	# image_blur = cv2.blur(image, (7, 7))
-	# image = 255 - image
-	# image_blur = 255 - image_blur
-	# image = image + image_blur
-	# background = cv2.imread("galaxy.jpg")
-	# background = cv2.resize(background, (image.shape[1], image.shape[0]))
-	# background = change_brightness(background, -50)
-	# #background += image
-	# cv2.imwrite('stars.png', background)
 	plt.rcParams["figure.autolayout"] = True
+	plt.rcParams["figure.figsize"] = (11,11)
 	im = plt.imread("galaxy.png")
 	fig, ax = plt.subplots()
 	im = ax.imshow(im, extent=[0, 515, 0, 389])
