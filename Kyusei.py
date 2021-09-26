@@ -23,7 +23,9 @@ st.subheader("Repositories")
 repo_names = ['requests', 'scrapy', 'fastapi', 'rich', 'textual', 'httpx', 'pydantic', 'tqdm', 'bokeh', 'sanic', 'dash', 'mangadex', 'pyseto', 'Slicer', 'pytago', 'earthquakes',
               'dvc', 'aiospotify', 'ray', 'ruck', 'quimb', 'fileseq', 'Lean', 'merk', 'pe', 'Ignition', 'Cura', 'nextpnr', 'onlineshop', 'labyrinth', 'sentry', 'flask', 'httpie']
 
-button_array = [st.checkbox(i) for i in repo_names]
+col1, col2, col3 = st.columns(3)
+t = len(repo_names)//3
+button_array = [col1.checkbox(i) for i in repo_names[:t]] + [col2.checkbox(i) for i in repo_names[t:2*t]] + [col3.checkbox(i) for i in repo_names[2*t:]]
 
 if st.button("Submit"):
     arr = [repo_names[i] for i in range(len(repo_names)) if button_array[i]]
