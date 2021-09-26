@@ -39,9 +39,9 @@ def pull_repos(repos):
 		distance_matrix += distance_matrix_embed*weight
 	return repo_keys, distance_matrix
 
-def compute_clusters(repos):
+def compute_clusters(repos, eps=0.075):
 	repo_keys, distance_matrix = pull_repos(repos)
-	clustering = DBSCAN(eps=0.075, metric='precomputed')
+	clustering = DBSCAN(eps=eps, metric='precomputed')
 	clustering.fit(distance_matrix)
 	results = np.concatenate((repo_keys.T, [clustering.labels_]), 0)
 	return results.T

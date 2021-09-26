@@ -2,15 +2,17 @@ import matplotlib.pyplot as plt
 import numpy as np
 import cv2
 
-def generate_galaxies(results_clusters):
+def generate_galaxies(results_clusters, base_angle=True, seed=0):
+	np.random.seed(seed)
 	labels = np.array([int(i) for i in results_clusters.T[-1]])
 	cluster_labels, counts = np.unique(labels, return_counts=True)
 	indexes = np.argsort(counts)[::-1]
 	counts = counts[indexes]
 	cluster_labels = cluster_labels[indexes]
 	points_arr = []
-	base_angle = np.pi*np.random.random()
 	centroid_arr = []
+	if base_angle==True:
+		base_angle = np.pi*np.random.random()
 	for i_enum, label in enumerate(cluster_labels):
 		indexes = np.argwhere(labels==label).flatten()
 		points = np.random.normal(loc=0.0, scale=np.random.random()*0.08+0.07, size=(len(indexes), 2))
