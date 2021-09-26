@@ -17,6 +17,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 st.markdown('<p class="color-font">Kyusei</p>', unsafe_allow_html=True)
 
+st.write("Our project ‘Kyusei’ takes the popular static analysis tool Metabob API and makes it a more personalized tool for upcoming python developers and data science enthusiasts. Static analysis is used for software development and quality assurance teams to check for vulnerabilities. What we aim to promote through our project is the mindset that even young developers or non-professionals can go through their repo's and do debugging/error analysis using automated tools. Not only will this help the developers, but it will help in popularizing the metabob API among the developing community. The next generation of python developers should be aware of such tools which expose security vulnerabilities and other common errors in their personal as well as professional endeavors, not to mention automated static analysis tools, are the future of debugging and a tool all developers should be familiar with.")
 
 st.subheader("Repositories")
 repo_names = ['requests', 'scrapy', 'fastapi', 'rich', 'textual', 'httpx', 'pydantic', 'tqdm', 'bokeh', 'sanic', 'dash', 'mangadex', 'pyseto', 'Slicer', 'pytago', 'earthquakes',
