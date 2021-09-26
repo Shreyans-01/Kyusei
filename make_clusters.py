@@ -44,7 +44,7 @@ def compute_clusters(repos):
 	clustering = DBSCAN(eps=0.075, metric='precomputed')
 	clustering.fit(distance_matrix)
 	results = np.concatenate((repo_keys.T, [clustering.labels_]), 0)
-	return results
+	return results.T
 
 if __name__ == '__main__':
 	repos = ['bokeh', 'dash', 'rich', 'tqdm']
